@@ -1,12 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-const tvShow = () => {
-  return (
-    <div>
-      <br/>
-      <img src={props.image.medium} onClick={props.selectShow} alt=""/>
-    </div>
-  );
+const TvShow = props => {
+ 
+return <div>
+  <br />
+  <img src={props.show.image.medium} onClick={() => props.selectShow(props.show)} alt='' />
+</div>
 }
-
-export default tvShow;
+export default TvShow
